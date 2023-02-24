@@ -1,0 +1,14 @@
+{
+	"name": "castres-mazamet",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {
+		"live-server": "1.2.1",
+		"prettier": "^2.8.4"
+	},
+	"scripts": {
+		"start": "live-server --port=8081"
+	}
+}

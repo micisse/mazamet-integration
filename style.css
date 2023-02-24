@@ -1,0 +1,259 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/passerelle-mazamet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+div#container {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+div.content {
+    padding: 30px;
+    position: relative;
+}
+
+div.content > .top {
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    left: 160px;
+}
+
+div.content > .top h1,
+div.content > .top h5 {
+    margin: 0;
+}
+
+div.content > .top h1 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.3;
+}
+
+div.content > .top h5 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 4;
+}
+
+div.content > .top .slides {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: -350px;
+}
+
+div.content > .top > .slides > .arrows,
+div.content > .top > .slides > .pages {
+    width: 100%;
+}
+
+div.content > .top > .slides > .arrows {
+    font-size: 20px;
+}
+
+div.content > .top > .slides > .arrows a {
+    text-decoration: none;
+    color: #fff;
+}
+
+div.content > .top > .slides > .arrows > a {
+    opacity: 0.5;
+}
+
+div.content > .top > .slides > .arrows > a.active {
+    opacity: 1;
+}
+
+div.content > .top .slides .pages {
+    font-size: 55px;
+    font-weight: 400;
+}
+
+div.content > .top .slides .pages .indice {
+    position: absolute;
+    font-size: 18px;
+    top: 18px;
+}
+
+nav {
+    display: flex;
+}
+
+nav .logo {
+    margin-left: 30px;
+}
+
+nav .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+nav ul li a i {
+    font-size: 18px;
+}
+
+nav ul li a.heart-icon {
+    margin-left: 20px;
+}
+
+nav ul li a.search-icon {
+    margin-right: 20px;
+}
+
+div.menu {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+    height: 90vh;
+}
+
+div.menu a.item {
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.menu a.item span {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer > .left-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer > .left-wrapper > .photography {
+    color: white;
+    transform: rotate(-90deg);
+    font-weight: 100;
+    font-size: small;
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    opacity: 0.6;
+}
+
+footer > .left-wrapper > .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 160px;
+}
+
+footer > .left-wrapper > .icons .icon {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 180px;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    color: #fff;
+}
+
+footer > .explore-btn-wrapper {
+    height: 100%;
+    width: 600px;
+}
+
+footer > .explore-btn-wrapper a {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+@media (width <= 1250px) {
+    div.content > .top h1 {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    div.content > .top h5 {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    div.content > .top .slides {
+        right: -320px;
+    }
+
+    div.content > .top .slides .pages {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    div.content > .top .slides .pages .indice {
+        font-size: 13px;
+    }
+
+    div.content > .top > .slides > .arrows {
+        font-size: 15px;
+    }
+}
